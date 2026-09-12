@@ -64,4 +64,4 @@ const TEMPLATE_DATA = [
   nanti otomatis dihitung dari TEMPLATE_DATA.length
   =========================================================
 */
-const TOTAL_ASSET_OVERRIDE = null; // ganti jadi angka kalau mau custom, misal: 340
+const TOTAL_ASSET_OVERRIDE = 10000; // ganti jadi angka kalau mau custom, misal: 340

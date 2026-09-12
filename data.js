@@ -22,7 +22,7 @@
 const TEMPLATE_DATA = [
   {
     title: "Contoh Mascot Game",
-    image: "",
+    image: "Assets/mantap.webp",
     size: "large"
   },
   {
@@ -42,8 +42,8 @@ const TEMPLATE_DATA = [
   },
   {
     title: "Contoh Overlay Stream",
-    image: "",
-    size: "small"
+    image: "Assets/logo-trant.webp",
+    size: "large"
   },
   {
     title: "Contoh Logo Clan",
@@ -60,13 +60,13 @@ const TEMPLATE_DATA = [
   nanti otomatis dihitung dari TEMPLATE_DATA.length
   =========================================================
 */
-const TOTAL_ASSET_OVERRIDE = null; // ganti jadi angka kalau mau custom, misal: 340
+const TOTAL_ASSET_OVERRIDE = 10.000; // ganti jadi angka kalau mau custom, misal: 340
 
 /*
   Jumlah tutorial (dipakai di stat "Total Tutorial" di halaman utama).
   Ganti angkanya sesuai jumlah tutorial yang kamu punya.
 */
-const TOTAL_TUTORIAL = 0;
+const TOTAL_TUTORIAL = 5;
 
 /*
   =========================================================

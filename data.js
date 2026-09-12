@@ -67,3 +67,25 @@ const TOTAL_ASSET_OVERRIDE = null; // ganti jadi angka kalau mau custom, misal: 
   Ganti angkanya sesuai jumlah tutorial yang kamu punya.
 */
 const TOTAL_TUTORIAL = 0;
+
+/*
+  =========================================================
+  SOFTWARE & TOOLS
+  =========================================================
+  Daftar aplikasi yang dipakai di kelas. Tampil di halaman utama
+  sebagai baris ikon yang jalan otomatis (marquee).
+
+  - name : nama aplikasi (dipakai kalau field icon dikosongkan)
+  - icon : path ke gambar ikon aplikasi, misal "assets/icon-ps.png".
+           Kalau dikosongkan "", otomatis pakai kotak dengan
+           singkatan nama sebagai gantinya.
+
+  Idealnya isi PAS 5 item biar tampilannya seimbang.
+*/
+const TOOLS_DATA = [
+  { name: "Photoshop", icon: "" },
+  { name: "Illustrator", icon: "" },
+  { name: "Figma", icon: "" },
+  { name: "CorelDraw", icon: "" },
+  { name: "Canva", icon: "" }
+];

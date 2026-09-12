@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alpha's MURDES</title>
-<meta name="description" content="Tempat bermain & belajar ngedesain.">
+<meta name="description" content="Alpha's MURDES - Tempat bermain & belajar ngedesain.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -13,26 +13,26 @@
 
 <!-- ============ NAV ============ -->
 <nav class="nav">
-  <div class="wrap">
+  <div class="wrap nav-bar">
     <a href="#top" class="nav-brand">
       <!--
         GANTI LOGO DI SINI:
         Kalau mau balik ke logo teks, ganti <img> ini jadi:
         <div class="nav-mark">A</div>
       -->
-      <img src="Assets/logo-trant.webp" alt="Alpha's MURDES" class="nav-logo-img">
+      <img src="assets/logo-trant.png" alt="Alpha's MURDES" class="nav-logo-img">
       <span class="nav-brand-text">Alpha's MURDES</span>
     </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+
     <ul class="nav-links" id="nav-links">
       <li><a href="#katalog">Katalog</a></li>
       <li><a href="#tentang">Tentang</a></li>
       <li><a href="#gabung">Cara Gabung</a></li>
-    </ul>
-    <div style="display:flex; align-items:center; gap:16px;">
       <!-- GANTI NOMOR WHATSAPP DI SINI, LALU CARI-GANTI SEMUA "6285147540175" DI FILE INI -->
-      <a href="https://wa.me/6285147540175" class="nav-cta" target="_blank" rel="noopener">Join</a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
-    </div>
+      <li><a href="https://wa.me/6285147540175" class="nav-cta" target="_blank" rel="noopener">Kontak Admin</a></li>
+    </ul>
   </div>
 </nav>
 
@@ -41,24 +41,36 @@
   <div class="hero-shape"></div>
   <div class="wrap hero-grid">
     <div>
-      <h1>Belajar desain,<br>buat karya,<br><span>terus jual.</span></h1>
-      <p>MURDES Alpha - tempat murid bermain & belajar desain kayak logo gim, mascot, QRIS, banner, dan lain sebagainya.</p>
+      <p class="hero-kicker">Kelas desain untuk murid desain</p>
+      <h1>Belajar desain,<br>bikin karya,<br><span>terus jual.</span></h1>
+      <p>Alpha's MURDES — tempat murid bermain & belajar desain: logo, mascot game, banner, sampai GFX.</p>
       <div class="hero-actions">
         <a href="https://wa.me/6285147540175" class="btn btn-primary" target="_blank" rel="noopener">Join Sekarang</a>
         <a href="#katalog" class="btn btn-ghost">Lihat Katalog</a>
       </div>
     </div>
     <div class="hero-visual">
-      <div class="hero-visual-pattern"></div>
       <!--
-        GANTI GAMBAR HERO DI SINI (opsional):
-        Ganti div "hero-visual-mark" jadi <img src="assets/hero.jpg" ...>
-        kalau punya gambar mascot/karya andalan buat dipajang di sini.
+        GAMBAR HERO:
+        Taruh gambar kamu di assets/, lalu ganti span di bawah jadi:
+        <img src="assets/hero.jpg" alt="Alpha's MURDES" class="hero-visual-img">
+        Class "hero-visual-img" itu penting -- itu yang bikin gambar
+        gak ke-crop di HP.
       -->
-      <img src="Assets/mantap.webp" ...>
+      <span class="hero-visual-mark">AM</span>
     </div>
   </div>
 </header>
+
+<!-- ============ SOFTWARE & TOOLS ============ -->
+<section class="tools">
+  <div class="wrap">
+    <p class="tools-label">Software &amp; Tools</p>
+  </div>
+  <div class="tools-marquee">
+    <div class="tools-track" id="tools-track"></div>
+  </div>
+</section>
 
 <!-- ============ STATS ============ -->
 <section class="stats">

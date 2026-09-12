@@ -65,11 +65,42 @@ function initMobileNav() {
   toggle.addEventListener("click", () => {
     const isOpen = links.classList.toggle("nav-links-open");
     toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    toggle.textContent = isOpen ? "✕" : "☰";
   });
+
+  links.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      links.classList.remove("nav-links-open");
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.textContent = "☰";
+    });
+  });
+}
+
+function renderTools() {
+  const track = document.getElementById("tools-track");
+  if (!track || typeof TOOLS_DATA === "undefined" || TOOLS_DATA.length === 0) return;
+
+  const buildIcon = (tool) => {
+    const initials = tool.name
+      .split(" ")
+      .map(w => w[0])
+      .join("")
+      .slice(0, 2)
+      .toUpperCase();
+    return tool.icon
+      ? `<div class="tool-icon"><img src="${tool.icon}" alt="${tool.name}"></div>`
+      : `<div class="tool-icon"><span>${initials}</span></div>`;
+  };
+
+  // digandakan 2x biar animasi marquee-nya nyambung mulus tanpa putus
+  const doubled = [...TOOLS_DATA, ...TOOLS_DATA];
+  track.innerHTML = doubled.map(buildIcon).join("");
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   renderStats();
   renderGallery();
+  renderTools();
   initMobileNav();
 });

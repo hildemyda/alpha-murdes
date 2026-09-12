@@ -17,21 +17,20 @@
     <a href="#top" class="nav-brand">
       <!--
         GANTI LOGO DI SINI:
-        Kalau sudah punya file logo (misal logo.png), ganti div "nav-mark"
-        di bawah ini jadi: <img src="assets/logo.png" alt="Alpha's MURDES" style="width:40px;height:40px;border-radius:8px;">
+        Kalau mau balik ke logo teks, ganti <img> ini jadi:
+        <div class="nav-mark">A</div>
       -->
-      <!-- <div class="nav-mark">A</div> -->
-      <img src="assets/logo-trant.png" alt="Alpha's MURDES" style="width:40px;height:40px;border-radius:8px;">
+      <img src="assets/logo-trant.png" alt="Alpha's MURDES" class="nav-logo-img">
       <span class="nav-brand-text">Alpha's MURDES</span>
     </a>
     <ul class="nav-links" id="nav-links">
       <li><a href="#katalog">Katalog</a></li>
       <li><a href="#tentang">Tentang</a></li>
-      <li><a href="#gabung">Join</a></li>
+      <li><a href="#gabung">Cara Gabung</a></li>
     </ul>
     <div style="display:flex; align-items:center; gap:16px;">
-      <!-- GANTI NOMOR WHATSAPP DI SEMUA LINK "https://wa.me/62XXXXXXXXXX" DI FILE INI -->
-      <a href="https://wa.me/6285147540175" class="nav-cta" target="_blank" rel="noopener">Joinn</a>
+      <!-- GANTI NOMOR WHATSAPP DI SINI, LALU CARI-GANTI SEMUA "6285147540175" DI FILE INI -->
+      <a href="https://wa.me/6285147540175" class="nav-cta" target="_blank" rel="noopener">Join</a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Buka menu" aria-expanded="false">☰</button>
     </div>
   </div>
@@ -42,20 +41,22 @@
   <div class="hero-shape"></div>
   <div class="wrap hero-grid">
     <div>
-      <h1>Belajar desain,<br>bikin karya,<br><span>terus jual. lol</span></h1>
-      <p>Alpha's MURDES - tempat murid bermain & belajar desain, seperti logo, mascot game, banner, sampai GFX.</p>
+      <p class="hero-kicker">Kelas desain untuk murid desain</p>
+      <h1>Belajar desain,<br>bikin karya,<br><span>terus jual.</span></h1>
+      <p>Alpha's MURDES — tempat murid bermain & belajar desain: logo, mascot game, banner, sampai GFX.</p>
       <div class="hero-actions">
-        <a href="https://wa.me/62XXXXXXXXXX" class="btn btn-primary" target="_blank" rel="noopener">Joinnn</a>
-        <a href="#katalog" class="btn btn-ghost">Katalog Project</a>
+        <a href="https://wa.me/6285147540175" class="btn btn-primary" target="_blank" rel="noopener">Join Sekarang</a>
+        <a href="#katalog" class="btn btn-ghost">Lihat Katalog</a>
       </div>
     </div>
     <div class="hero-visual">
+      <div class="hero-visual-pattern"></div>
       <!--
         GANTI GAMBAR HERO DI SINI (opsional):
         Ganti div "hero-visual-mark" jadi <img src="assets/hero.jpg" ...>
         kalau punya gambar mascot/karya andalan buat dipajang di sini.
       -->
-      <span class="hero-visual-mark">HR</span>
+      <span class="hero-visual-mark">AM</span>
     </div>
   </div>
 </header>
@@ -69,7 +70,7 @@
     </div>
     <div class="stat">
       <div class="stat-num" id="stat-asset">0</div>
-      <div class="stat-label">Total Assets</div>
+      <div class="stat-label">Total Asset</div>
     </div>
     <div class="stat">
       <div class="stat-num" id="stat-kategori">0</div>
@@ -84,10 +85,11 @@
     <div class="section-head">
       <div>
         <h2>Katalog Project</h2>
-        <p>Kumpulan hasil karya dari kelas Alpha's MURDES. Klik kategori untuk menyaring.</p>
+        <p>Kumpulan hasil karya dari kelas Alpha's MURDES. Project terbaru tampil paling atas.</p>
       </div>
-      <div class="filters" id="filters"></div>
     </div>
+
+    <div id="gallery-featured"></div>
     <div class="gallery" id="gallery"></div>
   </div>
 </section>
@@ -108,12 +110,41 @@
   </div>
 </section>
 
+<!-- ============ CARA GABUNG ============ -->
+<section class="section steps" id="cara">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <h2>Cara Gabung</h2>
+        <p>Tiga langkah, gak ribet.</p>
+      </div>
+    </div>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Chat Admin</h3>
+        <p>Klik tombol Join, chat admin lewat WhatsApp buat tanya-tanya jadwal & biaya.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Konfirmasi</h3>
+        <p>Admin bantu kamu pilih kelas yang cocok sesuai level kamu sekarang.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>Mulai Belajar</h3>
+        <p>Langsung gabung sesi belajar dan mulai bikin project pertama kamu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============ JOIN ============ -->
 <section class="join" id="gabung">
   <div class="wrap">
     <h2>Mau gabung?</h2>
-    <p>Chat admin buat tanya-tanya, atau langsung join</p>
-    <a href="https://wa.me/62XXXXXXXXXX" class="btn btn-primary" target="_blank" rel="noopener">Chat Admin</a>
+    <p>Chat admin buat tanya-tanya, atau langsung join.</p>
+    <a href="https://wa.me/6285147540175" class="btn btn-primary" target="_blank" rel="noopener">Chat Admin</a>
   </div>
 </section>
 
@@ -121,7 +152,7 @@
 <footer class="footer">
   <div class="wrap">
     <span>© <span id="year"></span> Alpha's MURDES</span>
-    <span>Dibuat oleh rakyat, untuk rakyat.</span>
+    <span>Dibuat untuk murid desain, oleh murid desain.</span>
   </div>
 </footer>
 

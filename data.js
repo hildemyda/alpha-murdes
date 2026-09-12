@@ -83,9 +83,9 @@ const TOTAL_TUTORIAL = 5;
   Idealnya isi PAS 5 item biar tampilannya seimbang.
 */
 const TOOLS_DATA = [
-  { name: "Photoshop", icon: "" },
-  { name: "Illustrator", icon: "" },
-  { name: "Figma", icon: "" },
-  { name: "CorelDraw", icon: "" },
-  { name: "Canva", icon: "" }
+  { name: "CorelDraw", icon: "Assets/icon/cd.webp" },
+  { name: "PixelLab", icon: "Assets/icon/px.webp" },
+  { name: "AlightMotion", icon: "Assets/icon/am.webp" },
+  { name: "PicsArt", icon: "Assets/icon/pc.webp" },
+  { name: "Canva", icon: "Assets/icon/cv.webp" }
 ];

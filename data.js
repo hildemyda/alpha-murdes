@@ -1,56 +1,52 @@
 /*
   =========================================================
-  DATA TEMPLATE ALPHA'S MURDES
+  DATA PROJECT ALPHA'S MURDES
   =========================================================
   Ini file yang paling sering kamu edit tiap minggu.
   Tinggal COPY salah satu blok { ... } di bawah, TEMPEL di
   paling atas array, terus ganti isinya. Urutan di sini
   akan sama persis dengan urutan tampil di website
-  (yang paling atas = yang paling baru).
+  (yang paling atas = yang paling baru & jadi unggulan).
 
   Field yang wajib diisi:
-  - title    : nama project/template-nya
-  - category : HARUS salah satu dari: "Banner", "Logo", "Mascot", "GFX", "Lainnya"
+  - title    : nama project-nya
   - image    : path/link gambar preview-nya. Kalau belum ada
                gambar, biarkan kosong "" (otomatis pakai placeholder)
   - size     : "large", "medium", atau "small" -> ngatur besar-kecil
                kotak preview-nya di galeri biar gak monoton
+
+  Catatan: project PALING ATAS di list ini otomatis jadi
+  "unggulan" (tampil besar sendiri di paling atas katalog).
 */
 
 const TEMPLATE_DATA = [
   {
     title: "Contoh Mascot Game",
-    category: "Mascot",
     image: "",
     size: "large"
   },
   {
     title: "Contoh Logo Esport",
-    category: "Logo",
     image: "",
     size: "medium"
   },
   {
     title: "Contoh Banner Turnamen",
-    category: "Banner",
     image: "",
     size: "medium"
   },
   {
     title: "Contoh GFX Thumbnail",
-    category: "GFX",
     image: "",
     size: "small"
   },
   {
     title: "Contoh Overlay Stream",
-    category: "Lainnya",
     image: "",
     size: "small"
   },
   {
     title: "Contoh Logo Clan",
-    category: "Logo",
     image: "",
     size: "medium"
   }
@@ -64,4 +60,10 @@ const TEMPLATE_DATA = [
   nanti otomatis dihitung dari TEMPLATE_DATA.length
   =========================================================
 */
-const TOTAL_ASSET_OVERRIDE = 10000; // ganti jadi angka kalau mau custom, misal: 340
+const TOTAL_ASSET_OVERRIDE = null; // ganti jadi angka kalau mau custom, misal: 340
+
+/*
+  Jumlah tutorial (dipakai di stat "Total Tutorial" di halaman utama).
+  Ganti angkanya sesuai jumlah tutorial yang kamu punya.
+*/
+const TOTAL_TUTORIAL = 0;

@@ -8,16 +8,16 @@
   --paper: #f2f1ed;
   --paper-dim: #9a9aa2;
 
-  --amber: #ffb800;
-  --amber-dim: #4a3a10;
+  --amber: #10b981;
+  --amber-dim: #0d3b2e;
 
-  --cat-logo: #ffb800;
+  --cat-logo: #fbbf24;
   --cat-mascot: #ff5d5d;
   --cat-banner: #5d9cff;
   --cat-gfx: #b15dff;
-  --cat-lainnya: #37d99a;
+  --cat-lainnya: #94a3b8;
 
-  --font-display: "Anton", "Arial Narrow", sans-serif;
+  --font-display: "Space Grotesk", "Arial", sans-serif;
   --font-body: "Inter", -apple-system, sans-serif;
 
   --container: 1120px;
@@ -89,6 +89,7 @@ a { color: inherit; }
   background: var(--amber);
   color: var(--ink);
   font-family: var(--font-display);
+  font-weight: 700;
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -98,6 +99,7 @@ a { color: inherit; }
 
 .nav-brand-text {
   font-family: var(--font-display);
+  font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.3px;
   color: var(--paper);
@@ -176,6 +178,7 @@ a { color: inherit; }
 
 .hero h1 {
   font-family: var(--font-display);
+  font-weight: 700;
   font-size: clamp(42px, 6vw, 76px);
   line-height: 0.98;
   margin: 0 0 24px;
@@ -242,6 +245,7 @@ a { color: inherit; }
 
 .hero-visual-mark {
   font-family: var(--font-display);
+  font-weight: 700;
   font-size: 160px;
   color: var(--ink-line);
 }
@@ -269,6 +273,7 @@ a { color: inherit; }
 
 .stat-num {
   font-family: var(--font-display);
+  font-weight: 700;
   font-size: 44px;
   color: var(--amber);
   line-height: 1;
@@ -296,6 +301,7 @@ a { color: inherit; }
 
 .section-head h2 {
   font-family: var(--font-display);
+  font-weight: 700;
   font-size: clamp(30px, 4vw, 42px);
   margin: 0;
 }
@@ -370,6 +376,7 @@ a { color: inherit; }
   align-items: center;
   justify-content: center;
   font-family: var(--font-display);
+  font-weight: 700;
   font-size: 15px;
   color: var(--ink-line);
   background:
@@ -431,6 +438,7 @@ a { color: inherit; }
 
 .about-panel span {
   font-family: var(--font-display);
+  font-weight: 700;
   font-size: 120px;
   color: var(--amber);
   opacity: 0.9;
@@ -438,6 +446,7 @@ a { color: inherit; }
 
 .about h2 {
   font-family: var(--font-display);
+  font-weight: 700;
   font-size: clamp(28px, 3.6vw, 38px);
   margin: 0 0 20px;
 }
@@ -487,6 +496,7 @@ a { color: inherit; }
 
 .join h2 {
   font-family: var(--font-display);
+  font-weight: 700;
   font-size: clamp(32px, 5vw, 52px);
   margin: 0 0 18px;
 }

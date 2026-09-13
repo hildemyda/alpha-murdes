@@ -60,7 +60,7 @@ const TEMPLATE_DATA = [
   nanti otomatis dihitung dari TEMPLATE_DATA.length
   =========================================================
 */
-const TOTAL_ASSET_OVERRIDE = 10.000; // ganti jadi angka kalau mau custom, misal: 340
+const TOTAL_ASSET_OVERRIDE = 10000; // ganti jadi angka kalau mau custom (JANGAN pakai titik/koma, langsung angka polos)
 
 /*
   Jumlah tutorial (dipakai di stat "Total Tutorial" di halaman utama).

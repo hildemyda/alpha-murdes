@@ -16,39 +16,42 @@ function renderStats() {
   document.getElementById("stat-template").textContent = totalTemplate + "+";
   document.getElementById("stat-asset").textContent = totalAsset + "+";
   document.getElementById("stat-kategori").textContent = totalTutorial + "+";
+
+  // Bar-nya nunjukkin proporsi tiap angka dibanding yang paling besar
+  const values = [totalTemplate, totalAsset, totalTutorial];
+  const max = Math.max(...values, 1);
+  const minVisiblePercent = 6; // biar angka kecil tetap keliatan garisnya, gak nol total
+
+  const setBar = (id, value) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const percent = Math.max((value / max) * 100, minVisiblePercent);
+    requestAnimationFrame(() => { el.style.width = percent + "%"; });
+  };
+
+  setBar("stat-bar-template", totalTemplate);
+  setBar("stat-bar-asset", totalAsset);
+  setBar("stat-bar-kategori", totalTutorial);
 }
 
 function buildCardMedia(item) {
   return item.image
-    ? `<img class="card-img" src="${item.image}" alt="${item.title}">`
+    ? `<img class="card-img" src="${item.image}" alt="${item.title}" loading="lazy">`
     : `<div class="card-placeholder">Ganti gambar di<br>data.js</div>`;
 }
 
 function renderGallery() {
-  const featuredWrap = document.getElementById("gallery-featured");
   const grid = document.getElementById("gallery");
 
   if (!TEMPLATE_DATA || TEMPLATE_DATA.length === 0) {
-    featuredWrap.innerHTML = "";
     grid.innerHTML = '<div class="gallery-empty">Belum ada project. Tambahkan lewat data.js.</div>';
     return;
   }
 
-  const featured = TEMPLATE_DATA[0];
-  const rest = TEMPLATE_DATA.slice(1);
-
-  featuredWrap.innerHTML = `
-    <div class="featured-card">
-      ${buildCardMedia(featured)}
-      <div class="featured-badge">Terbaru</div>
-      <div class="featured-title">${featured.title}</div>
-    </div>
-  `;
-
   grid.innerHTML = "";
-  rest.forEach(item => {
+  TEMPLATE_DATA.forEach(item => {
     const card = document.createElement("div");
-    card.className = "card " + (item.size || "medium");
+    card.className = "card";
     card.innerHTML = `
       ${buildCardMedia(item)}
       <div class="card-title">${item.title}</div>

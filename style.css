@@ -297,7 +297,7 @@ a { color: inherit; }
   align-items: center;
   gap: 28px;
   width: max-content;
-  animation: tools-scroll 38s linear infinite;
+  animation: tools-scroll 70s linear infinite;
 }
 
 @keyframes tools-scroll {

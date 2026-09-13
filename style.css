@@ -31,7 +31,8 @@ html {
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  *:not(.tools-track) { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  .tools-track { animation-play-state: paused; }
 }
 
 body {
@@ -295,9 +296,9 @@ a { color: inherit; }
 .tools-track {
   display: flex;
   align-items: center;
-  gap: 28px;
+  gap: 14px;
   width: max-content;
-  animation: tools-scroll 100s linear infinite;
+  animation: tools-scroll 25s linear infinite;
 }
 
 @keyframes tools-scroll {
@@ -306,9 +307,9 @@ a { color: inherit; }
 }
 
 .tool-icon {
-  width: 72px;
-  height: 72px;
-  border-radius: 16px;
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
   background: var(--ink-soft);
   border: 1px solid var(--ink-line);
   display: flex;
@@ -327,7 +328,7 @@ a { color: inherit; }
 .tool-icon span {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: 18px;
+  font-size: 13px;
   color: var(--amber);
 }
 
@@ -638,26 +639,27 @@ a { color: inherit; }
     right: 0;
     flex-direction: column;
     align-items: stretch;
-    gap: 4px;
+    gap: 6px;
     background: var(--ink);
     border-bottom: 1px solid var(--ink-line);
-    padding: 12px 24px 20px;
+    padding: 18px 24px 24px;
   }
 
   .nav-links.nav-links-open { display: flex; }
 
   .nav-links a {
-    padding: 12px 4px;
+    padding: 16px 4px;
     border-bottom: 1px solid var(--ink-line);
     color: var(--paper);
+    font-size: 16px;
   }
 
   .nav-links li:last-child a { border-bottom: none; }
 
   .nav-cta {
-    margin-top: 8px;
+    margin-top: 14px;
     text-align: center;
-    padding: 13px 20px;
+    padding: 15px 20px;
   }
 
   .hero { padding: 28px 0 40px; }
@@ -673,4 +675,9 @@ a { color: inherit; }
   .about-panel { order: -1; max-width: 280px; margin: 0 auto; }
 
   .steps-grid { grid-template-columns: 1fr; }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+  }
 }
